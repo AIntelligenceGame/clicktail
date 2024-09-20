@@ -1,0 +1,18 @@
+# Log files
+*.log
+# Config yaml /json etc.
+configdevx.json
+config.yaml
+# Editor directories and files
+.idea/
+vendor/
+# 本地makefile
+Makefile
+.vscode/
+.vscode
+key
+bzops_rsa
+govariable.bat
+*.csv
+# self
+build/
