@@ -16,3 +16,4 @@ govariable.bat
 *.csv
 # self
 build/
+test/
