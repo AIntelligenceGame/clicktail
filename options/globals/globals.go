@@ -76,3 +76,7 @@ type OtherModes struct {
 
 	WriteManPage bool `hidden:"true" long:"write-man-page" description:"Write out a man page"`
 }
+type DoneMessage struct {
+	FileName string // 文件名
+	Success  bool   // 是否成功处理
+}
