@@ -1,4 +1,4 @@
-package awslog
+package gogogo
 
 import (
 	"fmt"
