@@ -61,7 +61,7 @@ RequestPattern: 配置请求模式匹配规则列表，用于解析请求路径�
 22.ConfigFile : 配置文件路径
 */
 
-func ParseLogFile(filepath string, _APIHost, _Dataset, _database string) {
+func ParseLogFile(filepath string, _APIHost, _Dataset, _database string, _AddFields []string) {
 	options := globals.GlobalOptions{
 		APIHost:    _APIHost, // 根据实际情况设置
 		TailSample: true,     // 根据实际情况设置
@@ -84,7 +84,7 @@ func ParseLogFile(filepath string, _APIHost, _Dataset, _database string) {
 		Localtime: false, // 根据实际情况设置
 		Timezone:  "",    // 根据实际情况设置
 
-		AddFields:   []string{}, // 根据实际情况设置
+		AddFields:   _AddFields, // 根据实际情况设置
 		DropFields:  []string{}, // 根据实际情况设置
 		ScrubFields: []string{"normalized_query"},
 
