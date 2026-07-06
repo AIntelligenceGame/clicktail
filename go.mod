@@ -1,6 +1,6 @@
 module github.com/AIntelligenceGame/clicktail
 
-go 1.25.0
+go 1.26.4
 
 require (
 	github.com/facebookgo/muster v0.0.0-20150708232844-fd3d7953fd52
